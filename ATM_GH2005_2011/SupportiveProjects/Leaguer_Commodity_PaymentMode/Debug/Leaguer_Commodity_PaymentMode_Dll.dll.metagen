@@ -1,0 +1,191 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Leaguer_Commodity_PaymentMode_Dll, Version=0.9.*, Culture=固定语言(固定国家/地区): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class LCP.Commodity: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    UInt32 CommodityID 'get ' : 
+    UInt32 AccumulateMultiple 'get ' : 
+    LCP.CommodityType Sort 'get ' : 
+    UInt32 PresentBaseNumber 'get ' : 
+    UInt32 PresentRehovedNumber 'get ' : 
+    UInt32 Discount 'get ' : 
+    UInt32 Price 'get ' : 
+    System.String CommodityName 'get ' : 
+  Methods:
+    get_CommodityName(): PrivateScope, Public, HideBySig, SpecialName
+    get_Price(): PrivateScope, Public, HideBySig, SpecialName
+    get_Discount(): PrivateScope, Public, HideBySig, SpecialName
+    get_PresentRehovedNumber(): PrivateScope, Public, HideBySig, SpecialName
+    get_PresentBaseNumber(): PrivateScope, Public, HideBySig, SpecialName
+    get_Sort(): PrivateScope, Public, HideBySig, SpecialName
+    get_AccumulateMultiple(): PrivateScope, Public, HideBySig, SpecialName
+    get_CommodityID(): PrivateScope, Public, HideBySig, SpecialName
+Class LCP.PaymentMode: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(UInt32, LCP.Commodity, UInt32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    UInt32 TogetherPay 'get set' : 
+    UInt32 Stock 'get set' : 
+    UInt32 PresentQuantity 'get ' : 
+    UInt32 CommodityQuantity 'get set' : 
+    UInt32 VoncherPay 'get set' : 
+    UInt32 AccumulatePointsPay 'get set' : 
+    UInt32 CreditPay 'get set' : 
+    UInt32 CashPay 'get set' : 
+    Int32 RealtimeNeedFillingAccPointsAmount 'get set' : 
+    Int32 RealtimeNeedFillingVoncherAmount 'get set' : 
+    Int32 RealtimeNeedFillingCashAmount 'get set' : 
+    Int32 RealtimeNeedFillingCreditAmount 'get set' : 
+    Int32 RealtimeSubmittedDealAmount 'get set' : 
+    Int32 RehovedDealAmount 'get set' : 
+    Boolean CannotBuy 'get set' : 
+    Int32 CreditPoundage 'get set' : 
+  Methods:
+    get_CreditPoundage(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_CreditPoundage(Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CannotBuy(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_CannotBuy(Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_RehovedDealAmount(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_RehovedDealAmount(Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_RealtimeSubmittedDealAmount(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_RealtimeSubmittedDealAmount(Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_RealtimeNeedFillingCreditAmount(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_RealtimeNeedFillingCreditAmount(Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_RealtimeNeedFillingCashAmount(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_RealtimeNeedFillingCashAmount(Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_RealtimeNeedFillingVoncherAmount(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_RealtimeNeedFillingVoncherAmount(Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_RealtimeNeedFillingAccPointsAmount(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_RealtimeNeedFillingAccPointsAmount(Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CashPay(): PrivateScope, Public, HideBySig, SpecialName
+    set_CashPay(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_CreditPay(): PrivateScope, Public, HideBySig, SpecialName
+    set_CreditPay(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_AccumulatePointsPay(): PrivateScope, Public, HideBySig, SpecialName
+    set_AccumulatePointsPay(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_VoncherPay(): PrivateScope, Public, HideBySig, SpecialName
+    set_VoncherPay(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_CommodityQuantity(): PrivateScope, Public, HideBySig, SpecialName
+    set_CommodityQuantity(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_PresentQuantity(): PrivateScope, Public, HideBySig, SpecialName
+    get_Stock(): PrivateScope, Public, HideBySig, SpecialName
+    set_Stock(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_TogetherPay(): PrivateScope, Public, HideBySig, SpecialName
+    set_TogetherPay(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    FillPayments(LeaguerType, Commodity): PrivateScope, Public, HideBySig
+    ErasePaymentFills(): PrivateScope, Public, HideBySig
+Class LCP.LeaguerBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(System.String, System.String, System.String, System.String, UInt32, LCP.LeaguerType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    LCP.LeaguerType Sort 'get ' : 
+    UInt32 AccumulatePoints 'get set' : 
+    System.String FullName 'get set' : 
+    System.String PassWord 'get set' : 
+    System.String UserID 'get set' : 
+  Methods:
+    get_UserID(): PrivateScope, Public, HideBySig, SpecialName
+    set_UserID(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PassWord(): PrivateScope, Public, HideBySig, SpecialName
+    set_PassWord(String): PrivateScope, Public, HideBySig, SpecialName
+    get_FullName(): PrivateScope, Public, HideBySig, SpecialName
+    set_FullName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_AccumulatePoints(): PrivateScope, Public, HideBySig, SpecialName
+    set_AccumulatePoints(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_Sort(): PrivateScope, Public, HideBySig, SpecialName
+    UpdateAccumulatePoints(Commodity, PaymentMode): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OddChangeUAP(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class LCP.NotLeaguer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :LCP.LeaguerBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    UpdateAccumulatePoints(Commodity, PaymentMode): PrivateScope, Public, Virtual, HideBySig
+    OddChangeUAP(): PrivateScope, Public, Virtual, HideBySig
+Class LCP.NormalLeaguer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :LCP.LeaguerBase
+    Void .ctor(System.String, System.String, System.String, System.String, UInt32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    UpdateAccumulatePoints(Commodity, PaymentMode): PrivateScope, Public, Virtual, HideBySig
+    OddChangeUAP(): PrivateScope, Public, Virtual, HideBySig
+Class LCP.VIP: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :LCP.LeaguerBase
+    Void .ctor(System.String, System.String, System.String, System.String, UInt32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    UpdateAccumulatePoints(Commodity, PaymentMode): PrivateScope, Public, Virtual, HideBySig
+    OddChangeUAP(): PrivateScope, Public, Virtual, HideBySig
+Class LCP.Student: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :LCP.LeaguerBase
+    Void .ctor(System.String, System.String, System.String, System.String, UInt32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    UpdateAccumulatePoints(Commodity, PaymentMode): PrivateScope, Public, Virtual, HideBySig
+    OddChangeUAP(): PrivateScope, Public, Virtual, HideBySig
+Class LCP.ViM_Student: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :LCP.LeaguerBase
+    Void .ctor(System.String, System.String, System.String, System.String, UInt32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    UpdateAccumulatePoints(Commodity, PaymentMode): PrivateScope, Public, Virtual, HideBySig
+    OddChangeUAP(): PrivateScope, Public, Virtual, HideBySig
+Class LCP.DealSuite: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Data.DataSet, System.Data.DataSet, System.Data.SqlClient.SqlDataAdapter, System.Data.SqlClient.SqlDataAdapter, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Data.DataSet commodityInfoDS : Public
+    System.Data.DataSet stockDS : Public
+    System.Data.SqlClient.SqlDataAdapter commodityInfoDA : Public
+    System.Data.SqlClient.SqlDataAdapter stockDA : Public
+    LCP.Commodity commodity : Public
+    LCP.PaymentMode paymentMode : Public
+Class LCP.LeaguerSuite: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Data.DataSet, System.Data.SqlClient.SqlDataAdapter): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Data.DataSet leaguerDS : Public
+    System.Data.SqlClient.SqlDataAdapter leaguerDA : Public
+    LCP.LeaguerBase leaguer : Public
+Class LCP.ComparerForNope: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IComparer
+Class LCP.ComparerForNormal: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IComparer
+Class LCP.ComparerForStudent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IComparer
+Class LCP.ComparerForVIP: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IComparer
+Class LCP.ComparerForViM_Student: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IComparer
+Struct LCP.LeaguerType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    LCP.LeaguerType Nope = 0 : Public, Static, Literal, HasDefault
+    LCP.LeaguerType Normal = 1 : Public, Static, Literal, HasDefault
+    LCP.LeaguerType VIP = 2 : Public, Static, Literal, HasDefault
+    LCP.LeaguerType Student = 3 : Public, Static, Literal, HasDefault
+    LCP.LeaguerType ViM_Student = 4 : Public, Static, Literal, HasDefault
+Struct LCP.CommodityType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    LCP.CommodityType NormalPrice_NoPresent_RecreationAndSports = 0 : Public, Static, Literal, HasDefault
+    LCP.CommodityType NormalPrice_NoPresent_Luxury = 1 : Public, Static, Literal, HasDefault
+    LCP.CommodityType NormalPrice_NoPresent_Neither = 2 : Public, Static, Literal, HasDefault
+    LCP.CommodityType Discount_NoPresent_RecreationAndSports = 3 : Public, Static, Literal, HasDefault
+    LCP.CommodityType Discount_NoPresent_Luxury = 4 : Public, Static, Literal, HasDefault
+    LCP.CommodityType Discount_NoPresent_Neither = 5 : Public, Static, Literal, HasDefault
+    LCP.CommodityType PresentIncluded_RecreationAndSports = 6 : Public, Static, Literal, HasDefault
+    LCP.CommodityType PresentIncluded_Luxury = 7 : Public, Static, Literal, HasDefault
+    LCP.CommodityType PresentIncluded_Neither = 8 : Public, Static, Literal, HasDefault

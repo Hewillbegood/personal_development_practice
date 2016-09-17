@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Leaguer_Commodity_PaymentMode", "Leaguer_Commodity_PaymentMode\Leaguer_Commodity_PaymentMode.vcxproj", "{23815E06-4AC3-4D5C-AB12-1B9A82D7651C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23815E06-4AC3-4D5C-AB12-1B9A82D7651C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{23815E06-4AC3-4D5C-AB12-1B9A82D7651C}.Debug|Win32.Build.0 = Debug|Win32
+		{23815E06-4AC3-4D5C-AB12-1B9A82D7651C}.Release|Win32.ActiveCfg = Release|Win32
+		{23815E06-4AC3-4D5C-AB12-1B9A82D7651C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

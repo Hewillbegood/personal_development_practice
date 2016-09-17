@@ -1,0 +1,79 @@
+  ATM_GH2005.CommodityEntering.resources - Embedded, ContainedInManifestFile, 
+  ATM_GH2005.DebugTools.resources - Embedded, ContainedInManifestFile, 
+  ATM_GH2005.ForForm1.resources - Embedded, ContainedInManifestFile, 
+  ATM_GH2005.Form1.resources - Embedded, ContainedInManifestFile, 
+  ATM_GH2005.LoginDialog.resources - Embedded, ContainedInManifestFile, 
+  ATM_GH2005.PayPage.resources - Embedded, ContainedInManifestFile, 
+  ATM_GH2005.RecordQuery.resources - Embedded, ContainedInManifestFile, 
+  ATM_GH2005.Register.resources - Embedded, ContainedInManifestFile, 
+  ATM_GH2005.会员注册.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly ATM_GH2005, Version=0.9.*, Culture=固定语言(固定国家/地区): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Leaguer_Commodity_PaymentMode_Dll, Version=0.9.*, Culture=固定语言(固定国家/地区): 
+	hash=None, flags=None
+Assembly RandomChars, Version=0.9.*, Culture=固定语言(固定国家/地区): 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ATM_GH2005.LoginDialog: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    LCP.LeaguerSuite LeaguerSuite0 'get set' : 
+  Methods:
+    get_LeaguerSuite0(): PrivateScope, Public, HideBySig, SpecialName
+    set_LeaguerSuite0(LeaguerSuite): PrivateScope, Public, HideBySig, SpecialName
+    InitializeComponent(): PrivateScope, Public, HideBySig
+Class ATM_GH2005.PayPage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(LCP.LeaguerSuite, System.Collections.ArrayList): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.ArrayList ShoppingListSended 'get set' : 
+    LCP.LeaguerSuite LeaguerSuite0 'get set' : 
+  Methods:
+    get_LeaguerSuite0(): PrivateScope, Public, HideBySig, SpecialName
+    set_LeaguerSuite0(LeaguerSuite): PrivateScope, Public, HideBySig, SpecialName
+    get_ShoppingListSended(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShoppingListSended(ArrayList): PrivateScope, Public, HideBySig, SpecialName
+Class ATM_GH2005.RecordQuery: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(LCP.LeaguerSuite): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ATM_GH2005.CommodityEntering: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(LCP.LeaguerSuite): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.ArrayList ShoppingListSended 'get set' : 
+    System.Collections.ArrayList ShoppingList 'get set' : 
+    LCP.LeaguerSuite LeaguerSuite0 'get set' : 
+  Methods:
+    get_LeaguerSuite0(): PrivateScope, Public, HideBySig, SpecialName
+    set_LeaguerSuite0(LeaguerSuite): PrivateScope, Public, HideBySig, SpecialName
+    get_ShoppingList(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShoppingList(ArrayList): PrivateScope, Public, HideBySig, SpecialName
+    get_ShoppingListSended(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShoppingListSended(ArrayList): PrivateScope, Public, HideBySig, SpecialName
+Class ATM_GH2005.Register: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ATM_GH2005.会员注册: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ATM_GH2005.DebugTools: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ATM_GH2005.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
