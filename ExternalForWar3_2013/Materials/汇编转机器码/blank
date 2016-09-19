@@ -1,0 +1,12 @@
+.386
+.model flat, stdcall
+option casemap:none
+.code
+LibMain proc
+ret
+LibMain Endp
+SumArray proc
+PUSH 21436587H
+PUSH 21436587H
+SumArray endp
+End LibMain
