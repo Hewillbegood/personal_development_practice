@@ -1,0 +1,391 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="ManagementSystemForSeedSales.Receipt"
+	x:Name="Window"
+	Title="种子销售管理系统"
+	Width="1920" Height="1080" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized" Loaded="Window_Loaded" Icon="dew.ico" KeyDown="Window_KeyDown" >
+	<Window.Background>
+		<ImageBrush Stretch="UniformToFill" ImageSource="03(1).jpg"/>
+	</Window.Background>
+      <Window.Resources>
+            <Style x:Key="AllCanUse" TargetType="{x:Type TextBox}">
+                  <Style.Triggers>
+                        <Trigger Property="Validation.HasError" Value="True">
+                              <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.Errors)[0].ErrorContent}"/>
+                        </Trigger>
+                  </Style.Triggers>
+            </Style>
+      </Window.Resources>
+	<Grid x:Name="LayoutRoot">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="2*"/>
+			<ColumnDefinition Width="300"/>
+			<ColumnDefinition Width="7*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="0.126*"/>
+			<RowDefinition Height="0.874*"/>
+		</Grid.RowDefinitions>
+		<Grid x:Name="cornerTitleGrid" Margin="0" Grid.ColumnSpan="2" Opacity="0.6">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<Label x:Name="label2" Content="佳木斯市东风区久龙种业经销处" Margin="20,20,0,0" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="24" VerticalAlignment="Top" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalContentAlignment="Center" Padding="0" FontWeight="Bold" Foreground="#99FFFFFF" Background="{x:Null}" Grid.ColumnSpan="2"/>
+			<Label x:Name="label3" Content="种子销售管理系统" Margin="100,0,0,0" Grid.Row="1" FontWeight="Bold" FontSize="48" VerticalAlignment="Top" Padding="0" Foreground="#99FFFFFF" Background="{x:Null}" d:LayoutOverrides="Width" Grid.Column="1" HorizontalAlignment="Left"/>
+		</Grid>
+		<Label x:Name="label5" Content="" Grid.Column="2" Margin="0,20,20,0" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="29.333" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold" Foreground="White" Opacity="0"/>
+		<Grid Grid.Column="1" Margin="20,0,0,0" Grid.Row="1" Grid.ColumnSpan="2">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="0.612*"/>
+			</Grid.RowDefinitions>
+			<Label x:Name="label6" Content="开收据" HorizontalAlignment="Center" Margin="0,0,0,110" VerticalAlignment="Center" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="52" FontWeight="Bold" Opacity="0.6" Padding="20" Grid.ColumnSpan="2"/>
+                  <Grid Margin="5,0,50,0" Grid.Row="1" Grid.ColumnSpan="2">
+                  	<Grid.ColumnDefinitions>
+                  		<ColumnDefinition Width="Auto"/>
+                  		<ColumnDefinition Width="0.114*"/>
+                  		<ColumnDefinition Width="Auto"/>
+                  		<ColumnDefinition Width="0.114*"/>
+                  		<ColumnDefinition Width="Auto"/>
+                  		<ColumnDefinition Width="0.114*"/>
+                  		<ColumnDefinition Width="Auto"/>
+                  	</Grid.ColumnDefinitions>
+                  	<StackPanel Margin="0" Orientation="Horizontal">
+                  		<Label x:Name="label8_Copy2" Content="购种单位:" HorizontalAlignment="Left" Margin="0,0,5,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="21.333" Opacity="0.6" VerticalAlignment="Top" Padding="5"/>
+                  		<TextBox x:Name="textBox" Margin="5,5,0,5" VerticalContentAlignment="Center" MinWidth="200" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="18.667" Text="{Binding Path=CustomerName, Mode=TwoWay, NotifyOnValidationError=True, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, ValidatesOnExceptions=True}" Style="{StaticResource AllCanUse}" VerticalAlignment="Center" MaxWidth="200"/>
+                  	</StackPanel>
+                  	<StackPanel Grid.Column="4" Margin="0" Orientation="Horizontal" ComboBox.SelectionChanged="comboBox_SelectionChanged">
+                  		<Label x:Name="label7_Copy3" Content="地址:" HorizontalAlignment="Left" Margin="0,0,5,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="21.333" Opacity="0.6" VerticalAlignment="Top"/>
+                  		<ComboBox x:Name="comboBox" MinWidth="120" Margin="5" DisplayMemberPath="County" SelectedValuePath="County" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="18.667" VerticalContentAlignment="Center" Padding="8,1,0,1" Grid.IsSharedSizeScope="True" VerticalAlignment="Center"/>
+                  		<ComboBox x:Name="comboBox_Copy" MinWidth="120" Margin="5" DisplayMemberPath="Country" SelectedValuePath="Country" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="18.667" VerticalContentAlignment="Center" Padding="8,1,0,1" Grid.IsSharedSizeScope="True" VerticalAlignment="Center"/>
+                  		<ComboBox x:Name="comboBox_Copy1" MinWidth="120" Margin="5,5,0,5" DisplayMemberPath="Village" SelectedValuePath="Village" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="18.667" VerticalContentAlignment="Center" Padding="8,1,0,1" Grid.IsSharedSizeScope="True" VerticalAlignment="Center"/>
+                  	</StackPanel>
+                  	<StackPanel Grid.Column="6" Margin="0" Orientation="Horizontal" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
+                  		<Label x:Name="label8_Copy3" Content="票号: 000" Margin="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="21.333" Opacity="0.6" Padding="5,5,2,5"/>
+                  	</StackPanel>
+                  	<StackPanel Margin="0" Orientation="Horizontal" Grid.Column="2">
+                  		<Label x:Name="label8_Copy5" Content="联系电话:" HorizontalAlignment="Left" Margin="0,0,5,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="21.333" Opacity="0.6" VerticalAlignment="Top" Padding="2,5,5,5"/>
+                  		<TextBox x:Name="textBox2" Margin="5,5,0,5" VerticalContentAlignment="Center" MinWidth="200" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="18.667" Style="{StaticResource AllCanUse}" VerticalAlignment="Center" MaxWidth="200"/>
+                  	</StackPanel>
+                  </Grid>
+                  <ListView x:Name="listView" Grid.Column="1" Margin="20,20,50,5" Grid.Row="2" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="18.667" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                        <ListView.View>
+                  		<GridView>
+						<GridViewColumn Header="作物" Width="60" x:Name="column">
+							<GridViewColumn.HeaderTemplate>
+								<DataTemplate>
+									<TextBlock FontSize="16" Padding="7,0,0,0" TextAlignment="Left" Text="作物" MinWidth="{Binding Path=ActualWidth, ElementName=column}"></TextBlock>
+								</DataTemplate>
+							</GridViewColumn.HeaderTemplate>
+                                          <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+									<TextBlock FontSize="16" Padding="3,2.9,1,2.9" Text="{Binding Path=DataSuite.DT.Rows[0][Crop]}"/>
+                                                </DataTemplate>
+                                          </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+						<GridViewColumn Header="品种" Width="95" x:Name="column1">
+							<GridViewColumn.HeaderTemplate>
+								<DataTemplate>
+									<TextBlock FontSize="16" Padding="7,0,0,0" TextAlignment="Left" Text="品种" MinWidth="{Binding Path=ActualWidth,ElementName=column1}"></TextBlock>
+								</DataTemplate>
+							</GridViewColumn.HeaderTemplate>
+                                          <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                      <TextBlock FontSize="16" Padding="3,2.9,1,2.9" Text="{Binding Path=DataSuite.DT.Rows[0][Breed]}"/>
+                                                </DataTemplate>
+                                          </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+						<GridViewColumn Header="产地" Width="80" x:Name="column2">
+							<GridViewColumn.HeaderTemplate>
+								<DataTemplate>
+									<TextBlock FontSize="16" Padding="7,0,0,0" TextAlignment="Left" Text="产地" MinWidth="{Binding Path=ActualWidth,ElementName=column2}"></TextBlock>
+								</DataTemplate>
+							</GridViewColumn.HeaderTemplate>
+                                          <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                      <TextBlock FontSize="16" Padding="3,2.9,1,2.9" Text="{Binding Path=DataSuite.DT.Rows[0][Source]}"/>
+                                                </DataTemplate>
+                                          </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+						<GridViewColumn Header="等级" Width="80" x:Name="column3">
+							<GridViewColumn.HeaderTemplate>
+								<DataTemplate>
+									<TextBlock FontSize="16" Padding="7,0,0,0" TextAlignment="Left" Text="等级" MinWidth="{Binding Path=ActualWidth,ElementName=column3}"></TextBlock>
+								</DataTemplate>
+							</GridViewColumn.HeaderTemplate>
+                                          <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                      <TextBlock FontSize="16" Padding="3,2.9,1,2.9" Text="{Binding Path=DataSuite.DT.Rows[0][Rank]}"/>
+                                                </DataTemplate>
+                                          </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+						<GridViewColumn Header="纯度(%)" Width="85" x:Name="column4">
+							<GridViewColumn.HeaderTemplate>
+								<DataTemplate>
+									<TextBlock FontSize="16" Padding="7,0,0,0" TextAlignment="Left" Text="纯度(%)" MinWidth="{Binding Path=ActualWidth,ElementName=column4}"></TextBlock>
+								</DataTemplate>
+							</GridViewColumn.HeaderTemplate>
+                                          <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                      <TextBlock FontSize="16" Padding="3,2.9,1,2.9" Text="{Binding Path=DataSuite.DT.Rows[0][Pureness]}"/>
+                                                </DataTemplate>
+                                          </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+						<GridViewColumn Header="净度(%)" Width="85" x:Name="column5">
+							<GridViewColumn.HeaderTemplate>
+								<DataTemplate>
+									<TextBlock FontSize="16" Padding="7,0,0,0" TextAlignment="Left" Text="净度(%)" MinWidth="{Binding Path=ActualWidth,ElementName=column5}"></TextBlock>
+								</DataTemplate>
+							</GridViewColumn.HeaderTemplate>
+                                          <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                      <TextBlock FontSize="16" Padding="3,2.9,1,2.9" Text="{Binding Path=DataSuite.DT.Rows[0][Neatness]}"/>
+                                                </DataTemplate>
+                                          </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+						<GridViewColumn Header="芽率(%)" Width="85" x:Name="column6">
+							<GridViewColumn.HeaderTemplate>
+								<DataTemplate>
+									<TextBlock FontSize="16" Padding="7,0,0,0" TextAlignment="Left" Text="芽率(%)" MinWidth="{Binding Path=ActualWidth,ElementName=column6}"></TextBlock>
+								</DataTemplate>
+							</GridViewColumn.HeaderTemplate>
+                                          <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                      <TextBlock FontSize="16" Padding="3,2.9,1,2.9" Text="{Binding Path=DataSuite.DT.Rows[0][GerminationPercentage]}"/>
+                                                </DataTemplate>
+                                          </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+						<GridViewColumn Header="水分(%)" Width="85" x:Name="column7">
+							<GridViewColumn.HeaderTemplate>
+								<DataTemplate>
+									<TextBlock FontSize="16" Padding="7,0,0,0" TextAlignment="Left" Text="水分(%)" MinWidth="{Binding Path=ActualWidth,ElementName=column7}"></TextBlock>
+								</DataTemplate>
+							</GridViewColumn.HeaderTemplate>
+                                          <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                      <TextBlock FontSize="16" Padding="3,2.9,1,2.9" Text="{Binding Path=DataSuite.DT.Rows[0][Humidity]}"/>
+                                                </DataTemplate>
+                                          </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+						<GridViewColumn Header="单价" Width="85" x:Name="column8">
+							<GridViewColumn.HeaderTemplate>
+								<DataTemplate>
+									<TextBlock FontSize="16" Padding="9,0,0,0" TextAlignment="Left" Text="单价" MinWidth="{Binding Path=ActualWidth,ElementName=column8}"></TextBlock>
+								</DataTemplate>
+							</GridViewColumn.HeaderTemplate>
+							<GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                      <TextBlock FontSize="16" Padding="3,2.9,1,2.9" Text="{Binding Path=UnitPrice, StringFormat=￥{0:N2}}"/>
+                                                </DataTemplate>
+                                          </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+						<GridViewColumn Header="数量(斤)" Width="89" x:Name="column9">
+							<GridViewColumn.HeaderTemplate>
+								<DataTemplate>
+									<TextBlock FontSize="16" Padding="7,0,0,0" TextAlignment="Left" Text="数量(斤)" MinWidth="{Binding Path=ActualWidth,ElementName=column9}"></TextBlock>
+								</DataTemplate>
+							</GridViewColumn.HeaderTemplate>
+                                          <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                      <TextBlock FontSize="16" Padding="3,2.9,1,2.9" Text="{Binding Path=Quantity}"/>
+                                                </DataTemplate>
+                                          </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+						<GridViewColumn Header="金额" Width="110" x:Name="column10">
+							<GridViewColumn.HeaderTemplate>
+								<DataTemplate>
+									<TextBlock FontSize="16" Padding="9,0,0,0" TextAlignment="Left" Text="金额" MinWidth="{Binding Path=ActualWidth,ElementName=column10}"></TextBlock>
+								</DataTemplate>
+							</GridViewColumn.HeaderTemplate>
+                                          <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                      <TextBlock FontSize="16" Padding="3,2.9,1,2.9" Text="{Binding Path=CashAmount, StringFormat=￥{0:N2}}"/>
+                                                </DataTemplate>
+                                          </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                              </GridView>
+                  	</ListView.View>
+                  </ListView>
+                  <Grid Margin="0,20,0,0" Grid.Row="2"  ComboBox.SelectionChanged="breedsComboBox_SelectionChanged">
+                  	<Grid.RowDefinitions>
+                  		<RowDefinition Height="Auto"/>
+                  		<RowDefinition Height="Auto"/>
+                  		<RowDefinition Height="Auto"/>
+                  		<RowDefinition Height="Auto"/>
+                  		<RowDefinition Height="Auto"/>
+                  	</Grid.RowDefinitions>
+                  	<Grid.ColumnDefinitions>
+                  		<ColumnDefinition Width="Auto"/>
+                  		<ColumnDefinition Width="Auto"/>
+                  	</Grid.ColumnDefinitions>
+                  	<Label x:Name="label8" Content="作物:" Margin="5,0,0,0" FontSize="21.333" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" HorizontalAlignment="Left" Opacity="0.6" VerticalContentAlignment="Center" Padding="5,0,5,5"/>
+                  	<ComboBox x:Name="comboBox1" Grid.Column="1" Margin="10,0,5,5" d:LayoutOverrides="Height" MinWidth="140" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="18.667" VerticalContentAlignment="Center" Padding="8,1,0,1" DisplayMemberPath="Crop" SelectedValuePath="Crop" MaxWidth="140" BorderThickness="1"/>
+                  	<Label x:Name="label8_Copy" Content="品种:" Margin="5,0,0,0" FontSize="21.333" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" HorizontalAlignment="Left" Opacity="0.6" Grid.Row="1" VerticalContentAlignment="Center" Padding="5"/>
+                  	<Label x:Name="label8_Copy1" Content="数量(斤):" Margin="5,0,0,0" FontSize="21.333" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" HorizontalAlignment="Left" Opacity="0.6" Grid.Row="2" VerticalContentAlignment="Center" Padding="5"/>
+                  	<TextBox x:Name="textBox1" Grid.Column="1" Margin="10,5,5,5" Grid.Row="2" d:LayoutOverrides="Width" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="18.667" VerticalContentAlignment="Center" MinWidth="140" Text="{Binding Quantity, Mode=TwoWay, NotifyOnValidationError=True, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, ValidatesOnExceptions=True}" Style="{StaticResource AllCanUse}" MaxWidth="140"/>
+                  	<ComboBox x:Name="comboBox1_Copy" Grid.Column="1" Margin="10,5,5,5" MinWidth="140" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="18.667" VerticalContentAlignment="Center" d:LayoutOverrides="Height" Grid.Row="1" Padding="8,1,0,1" DisplayMemberPath="Breed" SelectedValuePath="Breed" MaxWidth="140" />
+                  	<Label x:Name="label8_Copy4" Content="单价(￥):" Margin="5,0,0,0" FontSize="21.333" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" HorizontalAlignment="Left" Opacity="0.6" Grid.Row="3" VerticalContentAlignment="Center" Padding="5"/>
+                  	<TextBox x:Name="textBox1_Copy" Grid.Column="1" Margin="10,5,5,5" Grid.Row="3" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="18.667" VerticalContentAlignment="Center" MinWidth="140" Text="{Binding UnitPrice, Mode=TwoWay, NotifyOnValidationError=True, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, ValidatesOnExceptions=True}" Style="{StaticResource AllCanUse}" d:LayoutOverrides="Width" MaxWidth="140"/>
+                  	<Grid Grid.ColumnSpan="2" Margin="0" Grid.Row="4">
+                  		<Grid.ColumnDefinitions>
+                  			<ColumnDefinition Width="1*"/>
+                  			<ColumnDefinition Width="1*"/>
+                  		</Grid.ColumnDefinitions>
+                  		<Button x:Name="button1_Copy" Content="移除选定项" Margin="5" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="18.667" Padding="5" Click="button1_Copy_Click"/>
+                  		<Button x:Name="button1" Content="添加定义项" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="18.667" Padding="5" Click="button1_Click" Margin="5" Grid.Column="1"/>
+                  	</Grid>
+                  </Grid>
+                  <StackPanel Grid.Column="1" Margin="0" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+                  	<Button x:Name="button1_Copy1" Content="复位" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="21.333" Padding="100,5" HorizontalAlignment="Left" Margin="10,20" Click="button1_Copy1_Click"/>
+                  	<Button x:Name="button1_Copy2" Content="确认" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="21.333" Padding="100,5" HorizontalAlignment="Left" Margin="10,20,50,20" Click="button1_Copy2_Click"/>
+                  </StackPanel>
+                  <TextBlock x:Name="textBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="20,20,0,0" Grid.Row="3" TextWrapping="Wrap" Text="总额: ￥0" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="21.333" VerticalAlignment="Top" Opacity="0.6" Padding="0,5"/>			
+		</Grid>
+		<Grid Margin="0" Grid.Row="1">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="0.866*"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="200"/>
+			</Grid.ColumnDefinitions>
+			<Button x:Name="button" Grid.Column="1" Margin="0" d:LayoutOverrides="Height" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" MaxWidth="70" MaxHeight="70" Panel.ZIndex="1" MinWidth="65" MinHeight="65" MouseEnter="MainButtonsMouseEnter" MouseLeave="MainButtonsMouseLeave" Click="button_Click">
+				<Image Source="Display.ico" Stretch="None"/>
+			</Button>
+			<Label x:Name="label" Content="" Margin="0" d:LayoutOverrides="Width" Padding="0">
+				<Label.Background>
+					<LinearGradientBrush EndPoint="0,0.5" StartPoint="1,0.5">
+						<GradientStop Color="#FF3C7FB1" Offset="0"/>
+						<GradientStop Color="#003C7FB1" Offset="1"/>
+					</LinearGradientBrush>
+				</Label.Background>
+			</Label>
+			<Label x:Name="label1" Grid.Column="2" Margin="0" d:LayoutOverrides="Height" Padding="20,0,0,0" MaxWidth="200" Width="0" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="28" VerticalContentAlignment="Center" Foreground="#B2FFFFFF" Content="开收据" Grid.IsSharedSizeScope="True" HorizontalAlignment="Left">
+				<Label.Background>
+					<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+						<GradientStop Color="#FF3C7FB1" Offset="0"/>
+						<GradientStop Color="#003C7FB1" Offset="1"/>
+					</LinearGradientBrush>
+				</Label.Background>
+			</Label>
+			<Label x:Name="label4" Content="" Grid.Column="1" Margin="0" d:LayoutOverrides="Width, Height" Background="#FF3C7FB1"/>
+			<Label x:Name="label_Copy" Content="" Margin="0" Padding="0" d:LayoutOverrides="Width" Grid.Row="1">
+				<Label.Background>
+					<LinearGradientBrush EndPoint="0,0.5" StartPoint="1,0.5">
+						<GradientStop Color="#FF3C7FB1" Offset="0"/>
+						<GradientStop Color="#003C7FB1" Offset="1"/>
+					</LinearGradientBrush>
+				</Label.Background>
+			</Label>
+			<Button x:Name="button_Copy" Grid.Column="1" Margin="0" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" MaxWidth="70" MaxHeight="70" Panel.ZIndex="1" d:LayoutOverrides="Height" Grid.Row="1" MinWidth="65" MinHeight="65" MouseEnter="MainButtonsMouseEnter" MouseLeave="MainButtonsMouseLeave" Click="button_Copy_Click">
+				<Image Source="Winamp.ico" Stretch="None"/>
+			</Button>
+			<Label x:Name="label4_Copy" Content="" Grid.Column="1" Margin="0" Background="#FF3C7FB1" d:LayoutOverrides="Width, Height" Grid.Row="1"/>
+			<Label x:Name="label1_Copy" Content="最小化" Grid.Column="2" Margin="0" Padding="20,0,0,0" MaxWidth="200" Width="0" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="28" VerticalContentAlignment="Center" Foreground="#B2FFFFFF" d:LayoutOverrides="Height" Grid.Row="1" HorizontalAlignment="Left">
+				<Label.Background>
+					<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+						<GradientStop Color="#FF3C7FB1" Offset="0"/>
+						<GradientStop Color="#003C7FB1" Offset="1"/>
+					</LinearGradientBrush>
+				</Label.Background>
+			</Label>
+			<Label x:Name="label_Copy1" Content="" Margin="0" Padding="0" Grid.Row="2" d:LayoutOverrides="Width">
+				<Label.Background>
+					<LinearGradientBrush EndPoint="0,0.5" StartPoint="1,0.5">
+						<GradientStop Color="#FF3C7FB1" Offset="0"/>
+						<GradientStop Color="#003C7FB1" Offset="1"/>
+					</LinearGradientBrush>
+				</Label.Background>
+			</Label>
+			<Button x:Name="button_Copy1" Grid.Column="1" Margin="0" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" MaxWidth="70" MaxHeight="70" Panel.ZIndex="1" Grid.Row="2" d:LayoutOverrides="Height" MinWidth="65" MinHeight="65" MouseEnter="MainButtonsMouseEnter" MouseLeave="MainButtonsMouseLeave" Click="button_Copy1_Click">
+				<Image Source="Personalization.ico" Stretch="None"/>
+			</Button>
+			<Label x:Name="label4_Copy1" Content="" Grid.Column="1" Margin="0" Background="#FF3C7FB1" Grid.Row="2" d:LayoutOverrides="Width, Height"/>
+			<Label x:Name="label1_Copy1" Content="关于本软件" Grid.Column="2" Margin="0" Padding="20,0,0,0" MaxWidth="200" Width="0" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="28" VerticalContentAlignment="Center" Foreground="#B2FFFFFF" Grid.Row="2" d:LayoutOverrides="Height" HorizontalAlignment="Left">
+				<Label.Background>
+					<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+						<GradientStop Color="#FF3C7FB1" Offset="0"/>
+						<GradientStop Color="#003C7FB1" Offset="1"/>
+					</LinearGradientBrush>
+				</Label.Background>
+			</Label>
+			<Label x:Name="label_Copy2" Content="" Margin="0" Padding="0" Grid.Row="3" d:LayoutOverrides="Width">
+				<Label.Background>
+					<LinearGradientBrush EndPoint="0,0.5" StartPoint="1,0.5">
+						<GradientStop Color="#FF3C7FB1" Offset="0"/>
+						<GradientStop Color="#003C7FB1" Offset="1"/>
+					</LinearGradientBrush>
+				</Label.Background>
+			</Label>
+			<Button x:Name="button_Copy2" Grid.Column="1" Margin="0" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" MaxWidth="70" MaxHeight="70" Panel.ZIndex="1" Grid.Row="3" MinWidth="65" MinHeight="65" d:LayoutOverrides="Height" MouseEnter="MainButtonsMouseEnter" MouseLeave="MainButtonsMouseLeave" Click="button_Copy2_Click">
+				<Image Source="VLCd.ico" Stretch="None"/>
+			</Button>
+			<Label x:Name="label4_Copy2" Content="" Grid.Column="1" Margin="0" Background="#FF3C7FB1" d:LayoutOverrides="Width, Height" Grid.Row="3"/>
+			<Label x:Name="label1_Copy2" Content="退出本软件" Grid.Column="2" Margin="0" Padding="20,0,0,0" MaxWidth="200" Width="0" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="28" VerticalContentAlignment="Center" Foreground="#B2FFFFFF" Grid.Row="3" d:LayoutOverrides="Height" HorizontalAlignment="Left">
+				<Label.Background>
+					<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+						<GradientStop Color="#FF3C7FB1" Offset="0"/>
+						<GradientStop Color="#003C7FB1" Offset="1"/>
+					</LinearGradientBrush>
+				</Label.Background>
+			</Label>
+			<Label x:Name="label_Copy3" Content="" Margin="0" Padding="0" Grid.Row="4" d:LayoutOverrides="Width">
+				<Label.Background>
+					<LinearGradientBrush EndPoint="0,0.5" StartPoint="1,0.5">
+						<GradientStop Color="#FF3C7FB1" Offset="0"/>
+						<GradientStop Color="#003C7FB1" Offset="1"/>
+					</LinearGradientBrush>
+				</Label.Background>
+			</Label>
+			<Label x:Name="label1_Copy3" Content="品种数据库" Grid.Column="2" Margin="0" Padding="20,0,0,0" MaxWidth="200" Width="0" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="28" VerticalContentAlignment="Center" Foreground="#B2FFFFFF" Grid.Row="4" HorizontalAlignment="Left" d:LayoutOverrides="Height">
+				<Label.Background>
+					<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+						<GradientStop Color="#FF3C7FB1" Offset="0"/>
+						<GradientStop Color="#003C7FB1" Offset="1"/>
+					</LinearGradientBrush>
+				</Label.Background>
+			</Label>
+			<Label x:Name="label4_Copy3" Content="" Grid.Column="1" Margin="0" Background="#FF3C7FB1" Grid.Row="4" d:LayoutOverrides="Width, Height"/>
+			<Button x:Name="button_Copy3" Grid.Column="1" Margin="0" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" MaxWidth="70" MaxHeight="70" Panel.ZIndex="1" Grid.Row="4" MinWidth="65" MinHeight="65" MouseEnter="MainButtonsMouseEnter" MouseLeave="MainButtonsMouseLeave" Click="button_Copy3_Click" d:LayoutOverrides="Height">
+				<Image Source="Easy Of Acess.ico" Stretch="None"/>
+			</Button>
+			<Label x:Name="label_Copy4" Content="" Margin="0" Padding="0" Grid.Row="5" d:LayoutOverrides="Width">
+				<Label.Background>
+					<LinearGradientBrush EndPoint="0,0.5" StartPoint="1,0.5">
+						<GradientStop Color="#FF3C7FB1" Offset="0"/>
+						<GradientStop Color="#003C7FB1" Offset="1"/>
+					</LinearGradientBrush>
+				</Label.Background>
+			</Label>
+			<Label x:Name="label1_Copy4" Content="地址数据库" Grid.Column="2" Margin="0" Padding="20,0,0,0" MaxWidth="200" Width="0" FontFamily="/ManagementSystemForSeedSales;component/Fonts/#Microsoft YaHei" FontSize="28" VerticalContentAlignment="Center" Foreground="#B2FFFFFF" Grid.Row="5" HorizontalAlignment="Left" d:LayoutOverrides="Height">
+				<Label.Background>
+					<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+						<GradientStop Color="#FF3C7FB1" Offset="0"/>
+						<GradientStop Color="#003C7FB1" Offset="1"/>
+					</LinearGradientBrush>
+				</Label.Background>
+			</Label>
+			<Button x:Name="button_Copy4" Grid.Column="1" Margin="0" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" MaxWidth="70" MaxHeight="70" Panel.ZIndex="1" Grid.Row="5" MinWidth="65" MinHeight="65" MouseEnter="MainButtonsMouseEnter" MouseLeave="MainButtonsMouseLeave" Click="button_Copy4_Click" d:LayoutOverrides="Height">
+				<Image Source="Work.ico" Stretch="None"/>
+			</Button>
+			<Label x:Name="label4_Copy4" Content="" Grid.Column="1" Margin="0" Background="#FF3C7FB1" Grid.Row="5" d:LayoutOverrides="Width, Height"/>
+		</Grid>
+	</Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagementSystemForSeedSales", "ManagementSystemForSeedSales\ManagementSystemForSeedSales.csproj", "{899230e7-8ccc-4cb3-ab85-e93471e9d8d3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{899230E7-8CCC-4CB3-AB85-E93471E9D8D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{899230E7-8CCC-4CB3-AB85-E93471E9D8D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{899230E7-8CCC-4CB3-AB85-E93471E9D8D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{899230E7-8CCC-4CB3-AB85-E93471E9D8D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

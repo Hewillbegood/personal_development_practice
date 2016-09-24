@@ -1,0 +1,94 @@
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\bin\Debug\ManagementSystemForSeedSales.exe.manifest
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\bin\Debug\ManagementSystemForSeedSales.application
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\bin\Debug\ManagementSystemForSeedSales.exe
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\bin\Debug\ManagementSystemForSeedSales.pdb
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ResolveAssemblyReference.cache
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\AboutTheSoftware.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\BreedsDataBase.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\Receipt.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\SignInWindow.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\SitesDataBase.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\StartAnimation.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\TheBigQuery.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\Today.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\AboutTheSoftware.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\BreedsDataBase.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\Receipt.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\SignInWindow.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\SitesDataBase.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\StartAnimation.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\TheBigQuery.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\Today.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\App.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales_MarkupCompile.cache
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.g.resources
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.Properties.Resources.resources
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\GenerateResource.read.1.tlog
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\GenerateResource.write.1.tlog
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.exe.manifest
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.application
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.exe
+H:\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.pdb
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.exe
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.pdb
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\bin\Debug\ManagementSystemForSeedSales.exe.manifest
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\bin\Debug\ManagementSystemForSeedSales.application
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\bin\Debug\ManagementSystemForSeedSales.exe
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\bin\Debug\ManagementSystemForSeedSales.pdb
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\ResolveAssemblyReference.cache
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\AboutTheSoftware.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\BreedsDataBase.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\Receipt.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\SignInWindow.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\SitesDataBase.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\StartAnimation.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\TheBigQuery.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\Today.baml
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\AboutTheSoftware.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\BreedsDataBase.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\Receipt.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\SignInWindow.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\SitesDataBase.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\StartAnimation.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\TheBigQuery.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\Today.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\App.g.cs
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales_MarkupCompile.cache
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.g.resources
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.Properties.Resources.resources
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\GenerateResource.read.1.tlog
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\GenerateResource.write.1.tlog
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.exe.manifest
+H:\Documents\VitalProjects\ManagementSystemForSeedSales - 副本 (2)\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.application
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\bin\Debug\ManagementSystemForSeedSales.exe.manifest
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\bin\Debug\ManagementSystemForSeedSales.application
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\bin\Debug\ManagementSystemForSeedSales.exe
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\bin\Debug\ManagementSystemForSeedSales.pdb
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\AboutTheSoftware.baml
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\BreedsDataBase.baml
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\Receipt.baml
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\SignInWindow.baml
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\SitesDataBase.baml
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\StartAnimation.baml
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\TheBigQuery.baml
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\Today.baml
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\AboutTheSoftware.g.cs
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\BreedsDataBase.g.cs
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\Receipt.g.cs
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\SignInWindow.g.cs
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\SitesDataBase.g.cs
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\StartAnimation.g.cs
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\TheBigQuery.g.cs
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\Today.g.cs
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\App.g.cs
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales_MarkupCompile.cache
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.g.resources
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.Properties.Resources.resources
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.csproj.GenerateResource.Cache
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.exe.manifest
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.application
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.exe
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.pdb
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales.csprojResolveAssemblyReference.cache
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\bin\Debug\MSFSS.mdb
+F:\KU\Documents\VitalProjects\ManagementSystemForSeedSales\ManagementSystemForSeedSales\obj\Debug\ManagementSystemForSeedSales_Content.g.cs
